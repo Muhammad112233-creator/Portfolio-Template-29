@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5e7df" />
+    <meta name="description" content="Ayla Rafi is a creative developer and digital designer making thoughtful, vivid experiences for the web." />
+    <meta property="og:title" content="Ayla Rafi — Creative Developer & Art Director" />
+    <meta property="og:description" content="Small worlds. Big feelings. A portfolio of playful digital places, made with care." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/og-card.jpg" />
+    <title>Ayla Rafi — Creative Developer & Art Director</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+  <body data-interface-color="light">
+    <div class="site-loader" id="site-loader" role="status" aria-label="Loading the portfolio">
+      <div class="site-loader__mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="site-loader__wordmark">A<span>·</span>R</p>
+      <p class="site-loader__caption" data-copy="loader">A little world is coming into focus</p>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#hero" aria-label="Ayla Rafi — home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="19.5" stroke="currentColor" stroke-width="1.4" />
+            <ellipse cx="24" cy="24" rx="9" ry="19.5" stroke="currentColor" stroke-width="1.1" />
+            <path d="M5 24h38M8.4 14.5h31.2M8.4 33.5h31.2" stroke="currentColor" stroke-width="1.05" />
+            <circle cx="34.5" cy="13" r="3.1" fill="#FF765C" stroke="#F5E7DF" stroke-width="1.2" />
+          </svg>
+        </span>
+        <span class="brand__name">AYLA<br />RAFI</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="#projects" data-copy="navWork">Work</a>
+        <a class="site-nav__link" href="#toolkit" data-copy="navStudio">Studio</a>
+        <a class="site-nav__link" href="#contact" data-copy="navContact">Contact</a>
+        <span class="site-nav__divider" aria-hidden="true"></span>
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language to French">
+          <span class="language-toggle__option is-active" data-locale-label="en">EN</span>
+          <span class="language-toggle__slash" aria-hidden="true">/</span>
+          <span class="language-toggle__option" data-locale-label="fr">FR</span>
+        </button>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="scroll-index" aria-label="Section navigation">
+      <a class="scroll-index__item is-active" href="#hero" aria-label="Hero" aria-current="location"><span class="scroll-index__bar"></span></a>
+      <a class="scroll-index__item" href="#manifesto" aria-label="Manifesto"><span class="scroll-index__bar"></span></a>
+      <a class="scroll-index__item" href="#parcours" aria-label="Journey"><span class="scroll-index__bar"></span></a>
+      <a class="scroll-index__item" href="#toolkit" aria-label="Toolkit"><span class="scroll-index__bar"></span></a>
+      <a class="scroll-index__item" href="#projects" aria-label="Projects"><span class="scroll-index__bar"></span></a>
+      <a class="scroll-index__item" href="#contact" aria-label="Contact"><span class="scroll-index__bar"></span></a>
+    </nav>
+
+    <div class="cursor-follower" id="cursor-follower" aria-hidden="true">
+      <span class="cursor-follower__icon">↗</span>
+      <span class="cursor-follower__label">open</span>
+    </div>
+
+    <main id="main-content">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__frame">
+          <div class="hero__ambient" aria-hidden="true"></div>
+          <div class="hero__globe-fallback" aria-hidden="true"><span></span></div>
+          <canvas class="hero__canvas" id="earth-canvas" aria-label="A colorful, slowly turning 3D Earth"></canvas>
+          <div class="hero__grain" aria-hidden="true"></div>
+          <div class="hero__topline">
+            <p class="eyebrow eyebrow--light"><span class="status-dot"></span><span data-copy="availability">Available for thoughtful projects</span></p>
+            <p class="hero__coordinates">31° 32′ N&nbsp; · &nbsp;74° 21′ E <span>—&nbsp; LAHORE, PK</span></p>
+          </div>
+          <div class="hero__content">
+            <div class="hero__headline-wrap">
+              <p class="hero__index">INDEPENDENT CREATIVE PRACTICE <span> / 2026</span></p>
+              <h1 class="hero__title" id="hero-title"><span data-copy="heroLine1">Small worlds.</span><br /><em data-copy="heroLine2">Big feelings.</em></h1>
+            </div>
+            <div class="hero__intro">
+              <p data-copy="heroIntro">I build digital places that feel a little more human — made from good ideas, careful code and a healthy amount of curiosity.</p>
+              <a class="text-link hero__explore-link" href="#manifesto"><span data-copy="explore">Explore the portfolio</span><span class="arrow-up-right" aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+          <div class="hero__footer">
+            <p><span data-copy="heroRole">Creative developer & art director</span><span class="hero__footer-dot">·</span><span data-copy="heroLocation">Working everywhere, rooted in Lahore</span></p>
+            <a class="hero__scroll-cue" href="#manifesto"><span data-copy="scroll">Scroll to explore</span><span class="hero__scroll-line" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto" id="manifesto" aria-label="A small manifesto">
+        <div class="manifesto__container">
+          <div class="manifesto__topline"><span>01 / A SMALL MANIFESTO</span><span>TAKE YOUR TIME&nbsp; ↓</span></div>
+          <p class="manifesto__text" data-copy="manifesto">I make the web feel like somewhere you can go.</p>
+          <div class="manifesto__bottomline"><span>LESS NOISE, MORE FEELING.</span><span>01 — 06</span></div>
+        </div>
+      </section>
+
+      <section class="journey" id="parcours" aria-labelledby="journey-title">
+        <div class="journey__entry">
+          <div class="section-meta section-meta--light"><span>02 / THE WAY HERE</span><span>A PRACTICE IN MOTION</span></div>
+          <div class="journey__entry-copy">
+            <h2 class="journey__title" id="journey-title" data-copy="journeyTitle">My journey</h2>
+            <p data-copy="journeyIntro">A few turns, a couple of happy accidents.</p>
+          </div>
+          <div class="journey__entry-bottom"><span>LOOKING BACK, LOOKING AHEAD</span><span class="round-stamp" aria-hidden="true">KEEP<br />MOVING ↘</span></div>
+        </div>
+
+        <div class="journey__reel" aria-label="A short story of how I work">
+          <div class="journey__pin-height">
+            <div class="journey__stage">
+              <div class="journey__visuals" aria-hidden="true">
+                <figure class="journey__visual journey__visual--left"><img src="./assets/atlas-cover.jpg" alt="" loading="lazy" /></figure>
+                <figure class="journey__visual journey__visual--right"><img src="./assets/fieldnotes-cover.jpg" alt="" loading="lazy" /></figure>
+                <div class="journey__visual-orbit journey__visual-orbit--one"></div>
+                <div class="journey__visual-orbit journey__visual-orbit--two"></div>
+              </div>
+              <div class="journey__sentences">
+                <p class="journey__sentence is-active"><span data-copy="journeyS1">First,</span><br /><em data-copy="journeyS2">I learned to look.</em></p>
+                <p class="journey__sentence"><span data-copy="journeyS3">Then,</span><br /><em data-copy="journeyS4">I learned to build.</em></p>
+                <p class="journey__sentence"><span data-copy="journeyS5">Now,</span><br /><em data-copy="journeyS6">I let both ideas talk.</em></p>
+                <p class="journey__sentence"><span data-copy="journeyS7">And make room</span><br /><em data-copy="journeyS8">for the unexpected.</em></p>
+              </div>
+              <div class="journey__counter" aria-hidden="true"><span class="journey__counter-current">01</span><span class="journey__counter-rule"></span><span>04</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolkit" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="toolkit__pin-height">
+          <div class="toolkit__stage">
+            <div class="section-meta section-meta--light toolkit__meta"><span>03 / THINGS I REACH FOR</span><span>THE KIT IS ALWAYS GROWING</span></div>
+            <header class="toolkit__header">
+              <h2 class="toolkit__title" id="toolkit-title" data-copy="toolkitTitle">Toolkit</h2>
+              <div class="toolkit__subtitle-wrap">
+                <p class="toolkit__subtitle toolkit__subtitle--front is-active" data-copy="toolkitFront">Creative development</p>
+                <p class="toolkit__subtitle toolkit__subtitle--art" data-copy="toolkitArt">Art direction</p>
+              </div>
+            </header>
+            <div class="toolkit__orbit-frame" aria-label="Tools and skills. Scroll to explore, or select a card to flip it.">
+              <div class="toolkit__wheel toolkit__wheel--front" id="tool-wheel-front" aria-label="Creative development skills"></div>
+              <div class="toolkit__wheel toolkit__wheel--art" id="tool-wheel-art" aria-label="Art direction skills" aria-hidden="true"></div>
+              <div class="toolkit__orbit-center" aria-hidden="true"><span class="toolkit__orbit-center-mark">A<span>·</span>R</span><span class="toolkit__orbit-center-caption" data-copy="toolkitCenter">Curious by default</span></div>
+            </div>
+            <div class="toolkit__footer"><span data-copy="toolkitHint">Tap a card for a note</span><div class="toolkit__progress"><span></span></div><span class="toolkit__section-number">03 <i>/</i> 06</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="projects__pin-height">
+          <div class="projects__stage">
+            <div class="section-meta section-meta--dark projects__meta"><span>04 / A FEW THINGS MADE</span><span>2023 — 2026</span></div>
+            <header class="projects__heading">
+              <h2 class="projects__title" id="projects-title" data-copy="projectsTitle">Selected work</h2>
+              <p data-copy="projectsIntro">Little experiments, lasting collaborations.</p>
+            </header>
+            <nav class="projects__list" id="project-list" aria-label="Selected projects">
+              <button class="project-link" type="button" data-project="atlas" aria-label="View Atlas of Nearness project">
+                <span class="project-link__name">atlas of nearness</span><span class="project-link__meta">01&nbsp; / &nbsp;Digital experience</span><span class="project-link__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="project-link" type="button" data-project="soft-weather" aria-label="View Soft Weather project">
+                <span class="project-link__name">soft weather</span><span class="project-link__meta">02&nbsp; / &nbsp;Interactive sound</span><span class="project-link__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="project-link" type="button" data-project="fieldnotes" aria-label="View Fieldnotes project">
+                <span class="project-link__name">fieldnotes for tomorrow</span><span class="project-link__meta">03&nbsp; / &nbsp;Identity & digital</span><span class="project-link__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="project-link" type="button" data-project="soft-forms" aria-label="View Soft Forms project">
+                <span class="project-link__name">soft forms</span><span class="project-link__meta">04&nbsp; / &nbsp;Art direction</span><span class="project-link__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="project-link" type="button" data-project="afterglow" aria-label="View Afterglow project">
+                <span class="project-link__name">afterglow</span><span class="project-link__meta">05&nbsp; / &nbsp;Digital ritual</span><span class="project-link__arrow" aria-hidden="true">↗</span>
+              </button>
+            </nav>
+            <div class="projects__bottom"><span data-copy="projectFootnote">Hover a title. Find a small world.</span><span class="projects__section-number">04 <i>/</i> 06</span></div>
+            <div class="project-preview" id="project-preview" aria-hidden="true"><img src="" alt="" /><span class="project-preview__caption"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-section" id="contact" aria-labelledby="next-title">
+        <div class="next-section__pin-height">
+          <div class="next-section__stage">
+            <div class="next-section__intro">
+              <p class="next-section__kicker" data-copy="nextKicker">05 / THE NEXT BIT</p>
+              <h2 id="next-title"><span data-copy="nextTitle1">What could we</span><br /><em data-copy="nextTitle2">make together?</em></h2>
+              <a class="next-section__playground-link" href="#toolkit"><span data-copy="playgroundLink">Take another little detour</span><span class="arrow-up-right" aria-hidden="true">↗</span></a>
+            </div>
+            <svg class="next-section__wave" viewBox="0 0 4200 900" preserveAspectRatio="none" role="img" aria-label="A line of text travels along a wave">
+              <defs>
+                <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0%" stop-color="#f6c177" />
+                  <stop offset="45%" stop-color="#9b7cff" />
+                  <stop offset="72%" stop-color="#ff6b4a" />
+                  <stop offset="100%" stop-color="#86e0ce" />
+                </linearGradient>
+              </defs>
+              <path id="wave-path" d="M-100 570 C300 190 770 160 1120 430 C1510 730 1770 760 2160 500 C2580 220 2920 130 3270 390 C3600 635 3860 650 4330 220" fill="none" />
+              <text class="next-section__wave-text"><textPath id="wave-text-path" href="#wave-path" startOffset="0%"><tspan>Good ideas deserve room to wander · Good ideas deserve room to wander · </tspan><tspan fill="url(#wave-gradient)">Good ideas deserve room to wander · Good ideas deserve room to wander · </tspan></textPath></text>
+              <circle id="wave-orb" class="next-section__wave-orb" cx="0" cy="0" r="18" />
+            </svg>
+            <footer class="next-footer" id="footer-content" aria-label="Footer" inert>
+              <div class="next-footer__background" aria-hidden="true"></div>
+              <div class="next-footer__content">
+                <div class="next-footer__main">
+                  <p class="next-footer__eyebrow" data-copy="footerEyebrow">A NOTE TO END ON</p>
+                  <p class="next-footer__headline"><span data-copy="footerHeadline1">I’m open to</span><br /><em data-copy="footerHeadline2">something thoughtful.</em></p>
+                  <a class="next-footer__email text-link" href="mailto:hello@example.com"><span data-copy="footerEmail">Tell me what you’re imagining</span><span aria-hidden="true">↗</span></a>
+                  <div class="next-footer__legal"><a href="mailto:hello@example.com" class="text-link" data-copy="footerLegal">Say hello</a><span>© <span id="copyright-year">2026</span> Ayla Rafi</span></div>
+                </div>
+                <nav class="next-footer__nav" aria-label="Footer navigation">
+                  <div class="next-footer__group"><p data-copy="footerExplore">Explore</p><a href="#parcours" class="text-link" data-copy="footerJourney">Journey</a><a href="#toolkit" class="text-link" data-copy="footerToolkit">Toolkit</a><a href="#projects" class="text-link" data-copy="footerProjects">Projects</a><a href="#hero" class="text-link" data-copy="footerTop">Back to top ↑</a></div>
+                  <div class="next-footer__group"><p data-copy="footerElsewhere">Elsewhere</p><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="text-link">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer" class="text-link">GitHub ↗</a><a href="mailto:hello@example.com" class="text-link">Email ↗</a></div>
+                </nav>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <button class="project-dialog__close" type="button" aria-label="Close project details">×</button>
+      <div class="project-dialog__image-wrap"><img class="project-dialog__image" src="" alt="" /></div>
+      <div class="project-dialog__copy">
+        <p class="project-dialog__eyebrow"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="project-dialog__description"></p>
+        <div class="project-dialog__bottom"><span class="project-dialog__year">2025 — 2026</span><a class="project-dialog__contact text-link" href="mailto:hello@example.com"><span data-copy="dialogContact">Ask me about this project</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
